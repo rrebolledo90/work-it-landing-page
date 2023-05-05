@@ -1,0 +1,60 @@
+/* Resets */
+*,
+*::before.*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  --primary-color: #24053e;
+  --secondary-color: #44ffa1;
+  --teritary-color: #584d62;
+  --white-color: #fff;
+  --shade-color: #fcf8ff;
+}
+
+.heading-cnt {
+  margin: 0 auto;
+  padding-top: 3.5625rem;
+  width: 88.51%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.main-heading-cnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3.97625rem;
+  line-height: 5rem;
+  gap: 2.5rem;
+}
+
+.btn {
+  font-size: 18px;
+  padding: 1px 40px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.main-heading {
+  font-size: 5rem;
+}
