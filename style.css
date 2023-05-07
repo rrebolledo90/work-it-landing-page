@@ -34,12 +34,19 @@ picture {
   --white-color: #fff;
   --shade-color: #fcf8ff;
   --primary-font: fraunces;
+  --secondary-font: Monrope;
 }
 
 @font-face {
   font-family: Fraunces;
   src: url(fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: Monrope;
+  src: url(fonts/manrope/static/Manrope-Regular.ttf) format("truetype");
+}
+
 /* ------------------------------- containers ----------------------------------- */
 
 .background-cnt {
@@ -67,6 +74,14 @@ picture {
   gap: 2.5rem;
 }
 
+.three-card-cnt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 730px;
+}
+
 .btn {
   font-size: 18px;
   padding: 15px 32px;
@@ -83,6 +98,16 @@ picture {
 .hero {
   width: 767px;
   height: 441px;
+}
+
+.box1,
+.box2,
+.box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
 }
 
 /* Individual */
@@ -114,10 +139,37 @@ picture {
   right: -6rem;
   position: absolute;
 }
+.nmb1,
+.nmb2,
+.nmb3 {
+  border: 1px solid var(--primary-color);
+  font-family: var(--primary-font);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  /* align-self: center; */
+}
+h2 {
+  font-size: var(--primary-font);
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+p {
+  width: 22.125rem;
+  text-align: center;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  color: var(--teritary-color);
+  font-size: 1.125rem;
+}
 
-/* -------------------------------- Meida Queries ------------------------------------- */
+/* -------------------------------- Media Queries ------------------------------------- */
 
-@media screen and (max-width: 866px) {
+@media screen and (max-width: 1061px) {
   .main-heading {
     font-size: 3.75rem;
   }
@@ -132,8 +184,12 @@ picture {
     width: 16.875em;
     height: 13.4375em;
   }
+  .box1,
+  .box2 {
+    margin-top: 100px;
+  }
 }
-@media screen and (max-width: 612px) {
+@media screen and (max-width: 707px) {
   .main-heading {
     font-size: 3.125rem;
   }
@@ -147,5 +203,21 @@ picture {
   .left-logo,
   .right-logo {
     display: none;
+  }
+  .nmb1,
+  .nmb2,
+  .nmb3 {
+    font-size: 1.25rem;
+    width: 48px;
+    height: 46px;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .box1 {
+    margin-top: 80px;
   }
 }
