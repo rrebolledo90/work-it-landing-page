@@ -123,6 +123,22 @@ picture {
   justify-content: center;
 }
 
+/* Footer Section */
+
+.company-logos {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.logo-cnt {
+  padding-top: 1.875rem;
+  padding-bottom: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
 /* Individual Styles */
 
 .nav-link {
@@ -164,7 +180,6 @@ picture {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  /* align-self: center; */
 }
 h2 {
   font-family: var(--primary-font);
@@ -179,11 +194,6 @@ p {
   color: var(--teritary-color);
   font-size: 1.125rem;
 }
-
-/* .btn-section{
-    display: flex;
-    
-} */
 
 .btn-header {
   font-family: var(--primary-font);
@@ -207,6 +217,7 @@ p {
   padding: 0.9375rem 2rem;
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 .bottom-btn {
@@ -216,6 +227,19 @@ p {
 .founder-img {
   width: 29.8125rem;
   height: 29.8125rem;
+}
+
+/* ---------------------- button Utilities --------------------  Link, active, hover, focus, active*/
+
+.btn:hover,
+.bottom-btn:hover {
+  border: 0.0625rem solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: var(--secondary-color);
 }
 
 /* -------------------------------- Media Queries ------------------------------------- */
