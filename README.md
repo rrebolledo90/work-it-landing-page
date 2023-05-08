@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](Screenshot 2023-05-07 at 19-44-46 Document.png)
+![](screenshot.png)
 
 ### Links
 
